@@ -1,5 +1,8 @@
 //variables
 
+/*
+
+
 let nombre1 = "e"; // let nos sirve para los bloques de código
 var nombre2 ="Juan"; // var es como una variable global
 
@@ -162,4 +165,39 @@ for (let i = 0; i <= 20; i++) {
     }
 }
 
-console.log("Primeros 10 números pares:", pares);
+ console.log("Primeros 10 números pares:", pares);
+
+
+*/
+const h1 = document.getElementById("h1Element");
+console.log(h1.innerHTML);
+// console.log(h1);
+
+const button = document.getElementById("button1");
+
+function cambiarColor() {
+
+    var parrafos = document.querySelectorAll("p");
+
+    parrafos.forEach(function(parrafo) {
+        parrafo.style.color = "blue";
+    });
+}
+
+function volverColor() {
+
+    var parrafos2 = document.querySelectorAll("p");
+
+    parrafos2.forEach(function(parrafos2) {
+        parrafos2.style.color = "black";
+    });
+}
+
+//ejercicio 9
+
+function mostrarAlerta() {
+
+    var textoIngresado = document.getElementById("inputTexto").value;
+
+    alert("Texto ingresado: " + textoIngresado);
+}
