@@ -17,11 +17,42 @@
     <button onclick="volverColor()" >Volver... </button>
 
     <h2>Formulario</h2>
-    
+
     <label for="inputTexto">Ingresa un texto:</label>
     <input type="text" id="inputTexto" placeholder="Escribe algo...">
 
     <button onclick="mostrarAlerta()">Mostrar Alerta</button>
+
+    <h2>Listas</h2>
+    <ul id="miLista">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+    </ul>
+
+    <h2>Deshabilitar y Habilitar Campo de Texto</h2>
+
+
+    <input type="text" id="miInput" placeholder="Escribe algo aquí...">
+
+    <button id="btnDeshabilitar">Deshabilitar</button>
+
+    <button id="btnHabilitar">Habilitar</button>
+
+    <h2>Guardar correo en LocalStorage</h2>
+
+
+    <form id="correoForm">
+      <label for="correoInput">Correo electrónico:</label>
+      <input type="email" id="correoInput" required>
+      <button type="submit">Guardar</button>
+    </form>
+
+    <div id="correoAlmacenado"></div>
+
+    <button id="eliminarCorreo" style="display:none;">Eliminar correo almacenado</button>
 
     <script  src="/main.js"></script>
   </body>
